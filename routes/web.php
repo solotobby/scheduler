@@ -24,3 +24,4 @@ Route::get('auth/google/callback', [App\Http\Controllers\Auth\GoogleController::
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('activities', App\Http\Controllers\ActivityController::class);
